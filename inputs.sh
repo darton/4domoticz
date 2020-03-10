@@ -28,7 +28,7 @@ input_6 = Button(26)
 input_7 = Button(27)
 
 #51-57 it is idx values from domoticz virtual switches
-inputs_list = {
+inputs_map = {
     "51" : input_1,
     "52" : input_2,
     "53" : input_3,
@@ -47,8 +47,8 @@ def input_action_L2H(input_id):
     response = urlopen('https://127.0.0.1/json.htm?type=command&param=udevice&idx=' + str(input_id) + '&svalue=1', context=ssl._create_unverified_context())
 
 # --- Main program ---
-for s in inputs_list:
-    inputs_list[s].when_held = lambda s=s : input_action_H2L(s)
-    inputs_list[s].when_released = lambda s=s : input_action_L2H(s)
+for s in inputs_map:
+    inputs_map[s].when_held = lambda s=s : input_action_H2L(s)
+    inputs_map[s].when_released = lambda s=s : input_action_L2H(s)
 
 pause()
