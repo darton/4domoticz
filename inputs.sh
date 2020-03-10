@@ -15,7 +15,7 @@
 
 from gpiozero import Button
 from signal import pause
-from time import sleep
+#from time import sleep
 from urllib.request import urlopen
 #import ssl
 
