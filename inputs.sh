@@ -27,7 +27,7 @@ input_5 = Button(24)
 input_6 = Button(26)
 input_7 = Button(27)
 
-#51-57 it is idx values from domoticz virtual switch
+#51-57 it is idx values from domoticz virtual switches
 inputs_list = {
     "51" : input_1,
     "52" : input_2,
