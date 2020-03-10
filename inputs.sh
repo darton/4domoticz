@@ -17,7 +17,7 @@ from gpiozero import Button
 from signal import pause
 #from time import sleep
 from urllib.request import urlopen
-#import ssl
+import ssl
 
 input_1 = Button(5)
 input_2 = Button(6)
@@ -39,12 +39,12 @@ inputs_list = {
 }
 
 def input_action_H2L(input_id):
-    print("The " + str(input_id) + " has been changed from H to L")
-    response = urlopen('http://127.0.0.1/json.htm?type=command&param=udevice&idx=' + str(input_id) + '&svalue=0', context=ssl._create_unverified_context())
+    print("The idx=" + str(input_id) + " has been changed to 0")
+    response = urlopen('https://127.0.0.1/json.htm?type=command&param=udevice&idx=' + str(input_id) + '&svalue=0', context=ssl._create_unverified_context())
 
 def input_action_L2H(input_id):
-    print("The " + str(input_id) + " has been changed from L to H")
-    response = urlopen('http://127.0.0.1/json.htm?type=command&param=udevice&idx=' + str(input_id) + '&svalue=1', context=ssl._create_unverified_context())
+    print("The idx=" + str(input_id) + " has been changed to 1")
+    response = urlopen('https://127.0.0.1/json.htm?type=command&param=udevice&idx=' + str(input_id) + '&svalue=1', context=ssl._create_unverified_context())
 
 # --- Main program ---
 for s in inputs_list:
