@@ -18,13 +18,13 @@ from signal import pause
 from urllib.request import urlopen
 import ssl
 
-input_1 = Button(5, hold_time=1)
-input_2 = Button(6, hold_time=1)
-input_3 = Button(22, hold_time=1)
-input_4 = Button(23, hold_time=1)
-input_5 = Button(24, hold_time=1)
-input_6 = Button(26, hold_time=1)
-input_7 = Button(27, hold_time=1)
+input_1 = Button(5, hold_time=0.2)
+input_2 = Button(6, hold_time=0.2)
+input_3 = Button(22, hold_time=0.2)
+input_4 = Button(23, hold_time=0.2)
+input_5 = Button(24, hold_time=0.2)
+input_6 = Button(26, hold_time=0.2)
+input_7 = Button(27, hold_time=0.2)
 
 #51-57 it is idx values from domoticz virtual switches
 inputs_map = {
