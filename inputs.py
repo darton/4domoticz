@@ -18,9 +18,7 @@ from signal import pause
 from urllib.request import urlopen
 import ssl
 
-
-
-#51-57 it is idx values from domoticz virtual switches
+#51-57 it's idx values from domoticz virtual switches
 inputs_map = {
     "51" : Button(5, hold_time=0.2),
     "52" : Button(6, hold_time=0.2),
