@@ -12,7 +12,11 @@ def counter_action():
 
 #We can count every occurence when button was pressed.    
 counter.when_pressed = counter_action
-#Or we can count every occurence when button is pressed longer than bounce_time.
+
+#Or we can count every occurence when button was pressed longer than bounce_time.
 #counter.when_held = counter_action
+
+#Or we can count every occurence when button was released.
+#counter.when_released = counter_action
 
 pause()
