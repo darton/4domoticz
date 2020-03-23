@@ -11,6 +11,8 @@ idx_value = 50
 def counter_action():
     #response = urlopen('https://127.0.0.1/json.htm?type=command&param=udevice&idx=50&svalue=1', context=ssl._create_unverified_context())
     response = urlopen('https://127.0.0.1/json.htm?type=command&param=udevice&idx=' + str(idx_value) + '&svalue=1', context=ssl._create_unverified_context())
+
+    
 #We can count every occurence when button was pressed.    
 counter.when_pressed = counter_action
 
