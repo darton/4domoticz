@@ -1,0 +1,11 @@
+[Unit]
+      Description=get sensors data from redis and send to domoticz virtual sensors
+      After=network.target
+[Service]
+      User=pi
+      ExecStart=/usr/bin/python /home/pi/app/picoms/domoticz_virtual_sensor.py
+      WorkingDirectory=/home/pi/app/virtualsensors
+      Restart=on-failure
+      RestartSec=60
+[Install]
+      WantedBy=multi-user.target
