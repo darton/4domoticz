@@ -1,0 +1,12 @@
+[Unit]
+      Description=domoticz_service
+[Service]
+      #User=pi
+      #Group=users
+      ExecStart=/home/pi/domoticz/domoticz -www 8080 -sslwww 443
+      EnvironmentFile=/home/pi/domoticz.env
+      WorkingDirectory=/home/pi/domoticz
+      Restart=on-failure
+      RestartSec=1m
+[Install]
+      WantedBy=multi-user.target
