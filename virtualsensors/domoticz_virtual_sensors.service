@@ -3,8 +3,8 @@
       After=network.target
 [Service]
       User=pi
-      ExecStart=/usr/bin/python /home/pi/app/picoms/domoticz_virtual_sensor.py
-      WorkingDirectory=/home/pi/app/virtualsensors
+      ExecStart=/usr/bin/python /home/pi/domoticzapps/virtualsensors/domoticz_virtual_sensors.py
+      WorkingDirectory=/home/pi/domoticzapps/virtualsensors
       Restart=on-failure
       RestartSec=60
 [Install]
