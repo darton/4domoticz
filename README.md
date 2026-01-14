@@ -1,1 +1,1 @@
-# Raspberry Pi gpio inputs to domoticz virtual switches.
+# Raspberry Pi based domoticz apps.
