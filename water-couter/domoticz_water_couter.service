@@ -6,8 +6,8 @@ After=domoticz.service
 [Service]
 Environment=PYTHONUNBUFFERED=1
 User=pi
-WorkingDirectory=/home/pi/app/counter
-ExecStart=/usr/bin/python /home/pi/app/counter/domoticz_water_counters.py
+WorkingDirectory=/home/pi/domoticzapps/counter
+ExecStart=/usr/bin/python /home/pi/domoticzapps/counter/domoticz_water_counter.py
 Restart=on-failure
 RestartSec=60
 
