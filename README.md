@@ -31,11 +31,11 @@ Based on the current project layout:
 ```
 4domoticz/
 ├── virtualsensors/
-│   ├── main.py
+│   ├── domoticz_virtual_sensors.py
 │   ├── domoticz_virtual_sensors.service
 │   └── ...
 ├── water-couter/
-    ├── main.py
+    ├── water_couter.service.py
     ├── water_couter.service
     └── ...
 
