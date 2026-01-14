@@ -18,9 +18,12 @@ This architecture ensures reliability, modularity, and easy scaling.
 ## System Architecture
 
 ```
-[Physical Sensors] → [Pico W] → WiFi → [Redis] → [virtualsensors] → [Domoticz]
-                                              \
-                                               \→ [watermeter → Domoticz]
+Temperature, Humidity, Pressure sensors
+[BME280,DHT22] → [Pico W] → WiFi → [Redis] → [domoticz_virtual_sensors.py] → [Domoticz]
+
+Water Counter
+[Hall Sensor] → [GPIO Raspbery Pi input] → [water_couter.service.py] → [Domoticz]
+                                            
 ```
 
 ---
