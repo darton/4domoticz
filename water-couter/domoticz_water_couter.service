@@ -1,0 +1,15 @@
+[Unit]
+Description=Water Counter for Domoticz
+After=network.target
+After=domoticz.service
+
+[Service]
+Environment=PYTHONUNBUFFERED=1
+User=pi
+WorkingDirectory=/home/pi/app/counter
+ExecStart=/usr/bin/python /home/pi/app/counter/domoticz_water_counters.py
+Restart=on-failure
+RestartSec=60
+
+[Install]
+WantedBy=multi-user.target
