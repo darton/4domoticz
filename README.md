@@ -85,7 +85,7 @@ A Python application that counts pulses from a water meter equipped with a reed 
 
 #### How it works
 - Listens for pulses on a GPIO pin.  
-- Each pulse represents a fixed volume of water (e.g., 1 pulse = 0.5 L).  
+- Each pulse represents a fixed volume of water (e.g., 1 pulse = 1 L).  
 - **Immediately sends an update to Domoticz** using the `/json.htm?type=command&param=udevice` API endpoint.  
 - Domoticz virtual counter increases with every pulse.  
 - Runs continuously as a **systemd service**.  
