@@ -177,8 +177,3 @@ Each application contains its own configuration file or constants section where 
 ## License  
 This project is released under the MIT License.
 
-
-
-- wersję README z diagramem graficznym,  
-- przykładowe pliki konfiguracyjne,  
-- albo dopracować strukturę repozytorium pod bardziej profesjonalny layout.
